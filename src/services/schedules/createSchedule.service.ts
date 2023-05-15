@@ -101,7 +101,7 @@ const createScheduleService = async (
     ${Number(date[0])}-
     ${Number(date[2])}-
     ${Number(date[1])}`).getDay();
-  console.log(dayOfTheWeek);
+
   if (dayOfTheWeek === 0 || dayOfTheWeek === 6) {
     throw new AppError("Invalid date, work days are monday to friday", 400);
   }
